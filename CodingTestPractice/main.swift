@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK: - 0127
 //MARK: - Lavel_0: 두 수의 합
 //func solution(_ num1:Int, _ num2:Int) -> Int {num1 + num2}
 
@@ -71,4 +72,77 @@ import Foundation
 //    return (2022 - age) + 1
 //}
 
+//MARK: - 0128
+//MARK: - Lavel_0: 각도기
+//func solution(_ angle:Int) -> Int {
+//    switch angle > 0 {
+//    case angle < 90:
+//        return 1
+//    case angle == 90:
+//        return 2
+//    case angle < 180:
+//        return 3
+//    case angle == 180:
+//        return 4
+//    default:
+//        return 0
+//    }
+//}
+////다른풀이
+//func solution(_ angle:Int) -> Int {
+//    return angle < 90 ? 1 : angle == 90 ? 2 : angle < 180 ? 3 : 4
+//}
 
+//MARK: - Lavel_0: 짝수의 합
+//func solution(_ n:Int) -> Int {
+//    var sum = 0
+//    var i = 2
+//    while i <= n {
+//        sum += i
+//        i += 2
+//    }
+//    return sum
+//}
+//
+////다른풀이
+//func solution(_ n:Int) -> Int {
+//    return Array(1...n).filter {$0 % 2 == 0}.reduce(0, +)
+//}
+
+//MARK: - Lavel_0: 배열의 평균값
+//func solution(_ numbers:[Int]) -> Double {
+//    let sum = numbers.reduce(0){$0 + $1}
+//
+//    return Double(sum) / Double(numbers.count)
+//}
+//
+////다른사람 풀이
+//func solution(_ numbers: [Int]) -> Double { Double(numbers.reduce(0, +)) / Double(numbers.count) }
+
+//MARK: - Lavel_0: 양꼬치
+//func solution(_ n:Int, _ k:Int) -> Int {
+//    var service = n / 10
+//    var result = (n * 12000) + ((k - service) * 2000)
+//    return result
+//}
+
+//MARK: - Lavel_0: 점의 위치 구하기
+//func solution(_ dot:[Int]) -> Int {
+//   switch dot.filter{$0 < 0}.count {
+//   case 0:
+//       return 1
+//   case 1:
+//       if dot[0] < 0 {
+//           return 2
+//       }else {
+//           return 4
+//       }
+//   case 2:
+//       return 3
+//   default:
+//       return 0
+//   }
+//}
+//
+////다른풀이
+//func solution(_ dot: [Int]) -> Int { dot[0] > 0 && dot[1] > 0 ? 1 : dot[0] < 0 && dot[1] > 0 ? 2 : dot[0] > 0 && dot[1] < 0 ? 4 : 3 }
