@@ -146,3 +146,29 @@ import Foundation
 //
 ////다른풀이
 //func solution(_ dot: [Int]) -> Int { dot[0] > 0 && dot[1] > 0 ? 1 : dot[0] < 0 && dot[1] > 0 ? 2 : dot[0] > 0 && dot[1] < 0 ? 4 : 3 }
+
+//MARK: - 0129
+//MARK: - Lavel_0: 배열 뒤집기
+//func solution(_ num_list:[Int]) -> [Int] {num_list.reversed()}
+
+//MARK: - Lavel_0: 짝수홀수개수
+//func solution(_ num_list:[Int]) -> [Int] {[num_list.filter{$0 % 2 == 0}.count, num_list.filter{$0 % 2 == 1}.count]
+//}
+
+//MARK: - Lavel_0: 피자 나눠먹기
+//func solution(_ n:Int) -> Int { n % 7 == 0 ? n / 7 : (n / 7) + 1}
+//
+////다른풀이
+//func solution(_ n: Int) -> Int { n / 7 + (n % 7 > 0 ? 1 : 0) }
+
+//MARK: - Lavel_0: 배열 원소의 길이
+//func solution(_ strlist:[String]) -> [Int] {strlist.map {$0.count}}
+
+//MARK: - Lavel_0: 문자열 뒤집기
+//func solution(_ my_string:String) -> String {String(my_string.reversed())}
+
+//MARK: - Lavel_0: 중복된 숫자 개수
+//func solution(_ array:[Int], _ n:Int) -> Int {array.filter{$0 == n}.count}
+
+//MARK: - Lavel_0: 머쓱이보다 키 큰 사람
+//func solution(_ array:[Int], _ height:Int) -> Int {array.filter{$0 > height}.count}
