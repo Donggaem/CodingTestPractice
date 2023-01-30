@@ -172,3 +172,13 @@ import Foundation
 
 //MARK: - Lavel_0: 머쓱이보다 키 큰 사람
 //func solution(_ array:[Int], _ height:Int) -> Int {array.filter{$0 > height}.count}
+
+//MARK: - 0130
+//MARK: - Lavel_0: 피자 나눠먹기(3)
+//func solution(_ slice:Int, _ n:Int) -> Int {n / slice + (n % slice > 0 ? 1 : 0)}
+
+//MARK: - Lavel_0: 삼각형의 완성조건(1)
+//func solution(_ sides:[Int]) -> Int {
+//    let sides = sides.sorted()
+//    return sides[2] < sides[0] + sides[1] ? 1 : 2
+//}
