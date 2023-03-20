@@ -182,3 +182,28 @@ import Foundation
 //    let sides = sides.sorted()
 //    return sides[2] < sides[0] + sides[1] ? 1 : 2
 //}
+
+//MARK: - 0320
+//MARK: - Lavel_0: 최댓값 만들기(1)
+//func solution(_ numbers:[Int]) -> Int {numbers.sorted(by: >)[0] * numbers.sorted(by: >)[1]}
+
+//MARK: - Lavel_0: 배열 자르기
+//func solution(_ numbers:[Int], _ num1:Int, _ num2:Int) -> [Int] {numbers[num1...num2].map{$0}}
+
+//다른풀이
+//func solution(_ numbers:[Int], _ num1:Int, _ num2:Int) -> [Int] {
+//    return Array(numbers[num1...num2])
+//}
+//MARK: - Lavel_0: 순서쌍의 개수
+//func solution(_ n:Int) -> Int {
+//    var result = 0
+//    for i in 1...n {
+//        if n % i == 0 {
+//            result += 1
+//        }
+//    }
+//    return result
+//}
+//
+////다른풀이
+//func solution(_ n: Int) -> Int { (1...n).filter { n % $0 == 0 }.count }
