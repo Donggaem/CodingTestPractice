@@ -207,3 +207,19 @@ import Foundation
 //
 ////다른풀이
 //func solution(_ n: Int) -> Int { (1...n).filter { n % $0 == 0 }.count }
+
+//MARK: - 0321
+//MARK: - Lavel_0: 중앙값 구하기
+//func solution(_ array:[Int]) -> Int {array.sorted()[(array.count / 2)]}
+
+//MARK: - Lavel_0: 특정 문자 제거하기
+//func solution(_ my_string:String, _ letter:String) -> String {my_string.components(separatedBy: letter).joined()}
+
+//MARK: - Lavel_0: 아이스 아메리카노
+//func solution(_ money:Int) -> [Int] {[money / 5500, money % 5500]}
+
+//MARK: - Lavel_0: 옷가게 할인 받기
+//func solution(_ price:Int) -> Int {price >= 500000 ? Int(Double(price) * 0.80) : price >= 300000 ? Int(Double(price) * 0.90) : price >= 100000 ? Int(Double(price) * 0.95) : Int(price)}
+
+//MARK: - Lavel_0: 배열의 유사도
+//func solution(_ s1:[String], _ s2:[String]) -> Int {s1.filter{s2.contains($0)}.count}
