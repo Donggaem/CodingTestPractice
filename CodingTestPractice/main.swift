@@ -223,3 +223,25 @@ import Foundation
 
 //MARK: - Lavel_0: 배열의 유사도
 //func solution(_ s1:[String], _ s2:[String]) -> Int {s1.filter{s2.contains($0)}.count}
+
+//MARK: - 0322
+//MARK: - Lavel_0: 배열 두배 만들기
+//func solution(_ numbers:[Int]) -> [Int] {numbers.map{$0 * 2}}
+
+//MARK: - Lavel_0: 문자 반복 출력하기
+//func solution(_ my_string:String, _ n:Int) -> String {
+//    var result = ""
+//    for i in my_string {
+//        result += String(repeating: i, count: n)
+//    }
+//    return result
+//}
+
+//MARK: - Lavel_0: 편지
+//func solution(_ message:String) -> Int {message.count * 2}
+
+//MARK: - Lavel_0: 짝수는 싫어요
+//func solution(_ n:Int) -> [Int] {(0...n).filter{$0 % 2 == 1}}
+
+//MARK: - Lavel_0: 자릿수 더하기
+//func solution(_ n:Int) -> Int { String(n).map{Int(String($0))!}.reduce(0, +)}
