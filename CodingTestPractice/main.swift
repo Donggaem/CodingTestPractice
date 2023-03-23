@@ -245,3 +245,30 @@ import Foundation
 
 //MARK: - Lavel_0: 자릿수 더하기
 //func solution(_ n:Int) -> Int { String(n).map{Int(String($0))!}.reduce(0, +)}
+
+//MARK: - 0323
+//MARK: - Lavel_0: 숨어있는 숫자의 덧셈 (1)
+//func solution(_ my_string:String) -> Int {my_string.filter{$0.isNumber}.map{Int(String($0))!}.reduce(0, +)}
+
+//다른사람 풀이
+//func solution(_ my_string:String) -> Int {
+//     return my_string.compactMap{Int(String($0))}.reduce(0,+)
+//}
+
+//MARK: - Lavel_0: 모음 제거
+//func solution(_ my_string:String) -> String {my_string.components(separatedBy: ["a", "e", "i", "o", "u"]).joined()}
+
+//MARK: - Lavel_0: 문자열안에 문자열
+//func solution(_ str1:String, _ str2:String) -> Int {str1.contains(str2) ? 1 : 2}
+
+//MARK: - Lavel_0: 제곱수 판별하기
+//func solution(_ n:Int) -> Int {
+//    let x = Int(sqrt(Double(n)))
+//    return x * x == n ? 1 : 2
+//}
+
+//다른사람풀이
+//func solution(_ n: Int) -> Int { sqrt(Double(n)) == floor(sqrt(Double(n))) ? 1 : 2 }
+
+//MARK: - Lavel_0: 개미 군단
+//func solution(_ hp:Int) -> Int {(hp / 5) + ((hp % 5) / 3) + ((hp % 5) % 3)}
