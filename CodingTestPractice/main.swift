@@ -272,3 +272,44 @@ import Foundation
 
 //MARK: - Lavel_0: 개미 군단
 //func solution(_ hp:Int) -> Int {(hp / 5) + ((hp % 5) / 3) + ((hp % 5) % 3)}
+
+//MARK: 0324
+//MARK: - Lavel_0: 대문자와 소문자
+//func solution(_ my_string:String) -> String {
+//   var result:String = ""
+//    my_string.map {
+//        if ($0.asciiValue ?? 0) > 64 && ($0.asciiValue ?? 0) < 91 {
+//            result += String($0).lowercased()
+//        } else {
+//            result += String($0).uppercased()
+//        }
+//    }
+//    return result
+//}
+
+//MARK: - Lavel_0: 암호 해독
+//func solution(_ cipher:String, _ code:Int) -> String {
+//    var result: String = ""
+//    var list = Array(cipher)
+//    for i in 1...cipher.count {
+//        if i % code == 0 {
+//            result += String(list[i - 1])
+//        }
+//    }
+//    return result
+//}
+
+//MARK: - Lavel_0: 가위 바위 보
+//func solution(_ rsp:String) -> String {rsp.map{$0 == "0" ? "5" : $0 == "2" ? "0" : "2"}.joined()}
+
+//MARK: - Lavel_0: 문자열 정렬하기 (1)
+//func solution(_ my_string:String) -> [Int] {my_string.filter{$0.isNumber}.map{Int(String($0))!}.sorted()}
+
+//MARK: - Lavel_0: 세균 증식
+//func solution(_ n:Int, _ t:Int) -> Int {
+//    var result: Int = n
+//    for i in 1...t {
+//        result = result * 2
+//    }
+//    return result
+//}
