@@ -313,3 +313,55 @@ import Foundation
 //    }
 //    return result
 //}
+
+//MARK: 0325
+//MARK: - Lavel_0: 주사위의 개수
+//func solution(_ box:[Int], _ n:Int) -> Int {box.map{$0 / n}.reduce(1, *)}
+
+//MARK: - Lavel_0: n의 배수 고르기
+//func solution(_ n:Int, _ numlist:[Int]) -> [Int] {numlist.filter{$0 % n == 0}}
+
+//MARK: - Lavel_0: 최댓값 만들기 (2)
+//func solution(_ numbers:[Int]) -> Int {
+//    var arr: [Int] = []
+//    arr = numbers.sorted()
+//    var result1 = arr[0] * arr[1]
+//    var result2 = arr[arr.count - 1] * arr[arr.count - 2]
+//
+//    return result1 > result2 ? result1 : result2
+//}
+
+//다른사람 풀이
+//func solution(_ numbers:[Int]) -> Int {
+//    var numbers = numbers.sorted()
+//
+//    return max(numbers[0] * numbers[1], numbers[numbers.count-1] * numbers[numbers.count - 2])
+//}
+
+//MARK: - Lavel_0: - 직각삼각형
+//let n = readLine()!.components(separatedBy: [" "]).map { Int($0)! }
+//for i in 1...n[0] {
+//    print(String(repeating: "*", count: i))
+//}
+
+//다른사람 풀이
+//let n = readLine()!.components(separatedBy: [" "]).map { Int($0)! }
+//
+//(1...n[0]).forEach {
+//    print((1...$0).map { _ in "*" }.joined())
+//}
+
+//MARK: - Lavel_0: - 인덱스 바꾸기
+//func solution(_ my_string:String, _ num1:Int, _ num2:Int) -> String {
+//    var arr = my_string.map{String($0)}
+//    arr.swapAt(num1, num2)
+//    return arr.joined()
+//}
+
+//다른사람 풀이
+//func solution(_ myString: String, _ num1: Int, _ num2: Int) -> String {
+//    var array = ArraySlice(myString)
+//
+//    array.swapAt(num1, num2)
+//    return array.map { String($0) }.joined()
+//}
