@@ -365,3 +365,33 @@ import Foundation
 //    array.swapAt(num1, num2)
 //    return array.map { String($0) }.joined()
 //}
+
+//MARK: - 0327
+//MARK: - Lavel_0: 배열 회전시키기
+//func solution(_ numbers:[Int], _ direction:String) -> [Int] {
+//    var arry = numbers
+//    if direction == "right" {
+//        arry.insert(arry.last!, at: 0)
+//        arry.removeLast()
+//    } else if direction == "left" {
+//        arry.insert(arry.first!, at: arry.count)
+//        arry.removeFirst()
+//    }
+//    return arry
+//}
+
+//다른사람 풀이
+//func solution(_ numbers:[Int], _ direction:String) -> [Int] {
+//    var nums = numbers
+//    direction == "right" ? nums.insert(nums.removeLast(), at: 0) : nums.append(nums.removeFirst())
+//    return nums
+//}
+
+//MARK: - Lavel_0: 가장 큰 수 찾기
+//func solution(_ array:[Int]) -> [Int] {[array.max()!, Int(array.firstIndex(of: array.max()!)!)]}
+
+//MARK: - Lavel_0: 외계행성의 나이
+//func solution(_ age:Int) -> String {
+//    var arr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+//    return String(age).map{arr[Int(String($0))!]}.joined()
+//}
