@@ -396,3 +396,37 @@ import Foundation
 //    return String(age).map{arr[Int(String($0))!]}.joined()
 //}
 
+//MARK: - 0328
+//MARK: - Lavel_0: 피자 나눠 먹기(2)
+//func solution(_ n:Int) -> Int {
+//    var result = 1
+//    while (6 * result) % n != 0 {
+//        result += 1
+//    }
+//    return result
+//}
+
+//MARK: - Lavel_0: 369게임
+//func solution(_ order:Int) -> Int {
+//    return String(order).filter {$0 == "3" || $0 == "6" || $0 == "9"}.count
+//}
+
+//다른사람 풀이
+//func solution(_ order:Int) -> Int {
+//    return String(order).filter { "369".contains($0) }.count
+//}
+
+//MARK: - Lavel_0: 약수 구하기
+//func solution(_ n:Int) -> [Int] {
+//    var arr: [Int] = []
+//    for i in 1...n {
+//        if n % i == 0 {
+//            arr.append(i)
+//        }
+//    }
+//    return arr
+//}
+
+//다른사람 풀이
+//func solution(_ n:Int) -> [Int] {(1...n).filter{n % $0 == 0}}
+
