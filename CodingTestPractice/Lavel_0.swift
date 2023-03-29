@@ -430,3 +430,49 @@ import Foundation
 //다른사람 풀이
 //func solution(_ n:Int) -> [Int] {(1...n).filter{n % $0 == 0}}
 
+//MARK: 0329
+//MARK: - Lavel_0: 숫자 찾기
+//func solution(_ num:Int, _ k:Int) -> Int { String(num).contains(String(k)) ? String(num).map{String($0)}.firstIndex(of: String(k))! + 1 : -1}
+
+//다른사람 풀이
+//func solution(_ num: Int, _ k: Int) -> Int { Array("-\(num)").firstIndex(of: Character(String(k))) ?? -1 }
+
+//MARK: - Lavel_0: 문자열 정렬하기 (2)
+//func solution(_ my_string:String) -> String {my_string.lowercased().sorted().map{String($0)}.joined()}
+
+//다른사람 풀이
+//func solution(_ my_string:String) -> String {
+//    return my_string.map{$0.lowercased()}.sorted(by: <).joined()
+//}
+
+//MARK: - Lavel_0: 합성수 찾기
+//func solution(_ n:Int) -> Int {
+//    var arr: [Int] = []
+//    var count: Int = 0
+//    for i in 1...n {
+//        arr = []
+//        for j in 1...i {
+//            if i % j == 0 {
+//                arr.append(j)
+//            }
+//        }
+//        if arr.count >= 3 {
+//            count += 1
+//        }
+//    }
+//    return count
+//}
+
+//다른사람 풀이
+//func solution(_ n: Int) -> Int { (1...n).filter { i in (1...i).filter { i % $0 == 0 }.count > 2 }.count }
+
+//MARK: - Lavel_0: 중복된 문자 제거
+//func solution(_ my_string:String) -> String {
+//    var result: String = ""
+//    for c in my_string {
+//        if !result.contains(c) {
+//            result += String(c)
+//        }
+//    }
+//    return result
+//}
