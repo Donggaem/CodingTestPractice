@@ -476,3 +476,36 @@ import Foundation
 //    }
 //    return result
 //}
+
+
+//MARK: - 0330
+//MARK: - Lavel_0: 모스부호 (1)
+//private let morse = [
+//    ".-": "a", "-...": "b", "-.-.": "c", "-..": "d", ".": "e", "..-.": "f", "--.": "g", "....": "h", "..": "i",
+//    ".---": "j", "-.-": "k", ".-..": "l", "--": "m", "-.": "n", "---": "o", ".--.": "p", "--.-": "q", ".-.": "r",
+//    "...": "s", "-": "t", "..-": "u", "...-": "v", ".--": "w", "-..-": "x", "-.--": "y", "--..": "z"
+//    ]
+//func solution(_ letter: String) -> String { letter.components(separatedBy: " ").map { morse[$0] ?? "" }.joined() }
+
+//MARK: - Lavel_0: A로 B만들기
+//func solution(_ before:String, _ after:String) -> Int {
+//    var b_arr: [String] = before.map{String($0)}.sorted()
+//    var a_arr: [String] = after.map{String($0)}.sorted()
+//    return b_arr == a_arr ? 1 : 0
+//}
+
+//func solution(_ before:String, _ after:String) -> Int { before.sorted() == after.sorted() ? 1 : 0}
+
+//다른사람 풀이
+//func solution(_ before: String, _ after: String) -> Int { Array(before).sorted() == Array(after).sorted() ? 1 : 0 }
+
+//MARK: - Lavel_0: 팩토리얼
+//func solution(_ n:Int) -> Int {
+//    var mul = 1
+//    var result = 0
+//    while mul <= n {
+//        result += 1
+//        mul *= result
+//    }
+//    return result - 1
+//}
