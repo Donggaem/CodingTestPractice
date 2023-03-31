@@ -509,3 +509,58 @@ import Foundation
 //    }
 //    return result - 1
 //}
+
+//MARK: - 0331
+//MARK: - Lavel_0: 2차원으로 만들기
+//func solution(_ num_list:[Int], _ n:Int) -> [[Int]] {
+//    var arr_2: [[Int]] = []
+//    var arr_1: [Int] = []
+//    for i in 0...num_list.count - 1 {
+//        arr_1.append(num_list[i])
+//        if arr_1.count == n {
+//            arr_2.append(arr_1)
+//            arr_1 = []
+//        }
+//    }
+//    return arr_2
+//}
+
+//MARK: - Lavel_0: k의 개수
+//func solution(_ i:Int, _ j:Int, _ k:Int) -> Int {(i...j).map{String($0)}.joined().filter{String($0) == String(k)}.count}
+
+//MARK: - Lavel_0: 가까운 수 //이해가 필요
+//func solution(_ array:[Int], _ n:Int) -> Int {
+//    return array.min { (abs($0 - n), $0) < (abs($1 - n), $1) }!
+//}
+
+//MARK: - Lavel_0: 진료 순서 정하기
+//func solution(_ emergency:[Int]) -> [Int] {
+//    var arr: [Int] = emergency.sorted(by: >)
+//    return emergency.map{arr.index(of: $0)! + 1}
+//}
+
+//다른사람 풀이
+//func solution(_ e: [Int]) -> [Int] { e.map { e.sorted(by: >).firstIndex(of: $0)! + 1 } }
+
+//MARK: - Lavel_0: 한 번만 등장한 문자
+//func solution(_ s:String) -> String {
+//    var result: String = ""
+//    var temp: String = ""
+//    for c in s {
+//        if !result.contains(c), !temp.contains(c) {
+//            result += String(c)
+//            temp += String(c)
+//        }else if result.contains(c), temp.contains(c){
+//            result.remove(at: result.firstIndex(of: c)!)
+//        }
+//    }
+//    return String(result.sorted())
+//}
+
+//다른사람 풀이
+//func solution(_ s: String) -> String {
+//    return Dictionary(grouping: Array(s).map(String.init), by: { $0 }).filter { $0.value.count <= 1 }
+//        .map { $0.key }
+//        .sorted(by: <)
+//        .joined()
+//}
