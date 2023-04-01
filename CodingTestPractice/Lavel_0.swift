@@ -564,3 +564,46 @@ import Foundation
 //        .sorted(by: <)
 //        .joined()
 //}
+
+//MARK: - 0401
+//MARK: - Lavel_0: 숨어있는 숫자의 덧셈 (2)
+//func solution(_ my_string:String) -> Int {my_string.split(whereSeparator: { !$0.isNumber }).reduce(0){$0 + Int($1)!}}
+
+//MARK: - Lavel_0: 이진수 더하기
+//func solution(_ bin1:String, _ bin2:String) -> String {
+//    var result = Int(bin1, radix: 2)! + Int(bin2, radix: 2)!
+//    return String(result, radix: 2)
+//}
+
+//MARK: - Lavel_0: 소인수분해
+//func solution(_ n:Int) -> [Int] {
+//    if n == 2 { return [2] }
+//    var result:[Int] = []
+//    var num = n
+//    for i in 2...n {
+//        if num % i == 0 {
+//            result.append(i)
+//            while num % i == 0 {
+//                num /= i
+//            }
+//        }
+//        if num == 1 {
+//            break
+//        }
+//    }
+//    return result
+//}
+
+//다른사람 풀이
+//func solution(_ n:Int) -> [Int] {
+//    var result: [Int] = []
+//    var temp = n
+//    for i in 2...temp {
+//        while temp % i == 0 {
+//            temp = temp / i
+//            result.append(i)
+//        }
+//    }
+//
+//    return Array(Set(result)).sorted()
+//}
