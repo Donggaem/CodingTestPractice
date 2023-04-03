@@ -479,7 +479,7 @@ import Foundation
 
 
 //MARK: - 0330
-//MARK: - Lavel_0: 모스부호 (1)
+//MARK: - Lavel_0: 모스부호 (1) (?)
 //private let morse = [
 //    ".-": "a", "-...": "b", "-.-.": "c", "-..": "d", ".": "e", "..-.": "f", "--.": "g", "....": "h", "..": "i",
 //    ".---": "j", "-.-": "k", ".-..": "l", "--": "m", "-.": "n", "---": "o", ".--.": "p", "--.-": "q", ".-.": "r",
@@ -542,7 +542,7 @@ import Foundation
 //다른사람 풀이
 //func solution(_ e: [Int]) -> [Int] { e.map { e.sorted(by: >).firstIndex(of: $0)! + 1 } }
 
-//MARK: - Lavel_0: 한 번만 등장한 문자
+//MARK: - Lavel_0: 한 번만 등장한 문자 (?)
 //func solution(_ s:String) -> String {
 //    var result: String = ""
 //    var temp: String = ""
@@ -575,7 +575,7 @@ import Foundation
 //    return String(result, radix: 2)
 //}
 
-//MARK: - Lavel_0: 소인수분해
+//MARK: - Lavel_0: 소인수분해 (?)
 //func solution(_ n:Int) -> [Int] {
 //    if n == 2 { return [2] }
 //    var result:[Int] = []
@@ -606,4 +606,41 @@ import Foundation
 //    }
 //
 //    return Array(Set(result)).sorted()
+//}
+
+//MARK: - 0403
+//MARK: - Lavel_0: 7의 개수
+//func solution(_ array:[Int]) -> Int {array.map{String($0)}.joined().filter{$0 == "7"}.count}
+
+//MARK: - Lavel_0: 공 던지기 (?)
+//func solution(_ numbers:[Int], _ k:Int) -> Int {
+//    return numbers[((k-1)*2) % numbers.count]
+//}
+
+//MARK: - Lavel_0: 컨트롤 제트
+//func solution(_ s:String) -> Int {
+//    var arr: [String] = s.split(separator: " ").map{String($0)}
+//    var result: Int = 0
+//    for (i, j) in arr.enumerated() {
+//        if j == "Z" {
+//            result -= Int(arr[i - 1])!
+//        }else {
+//            result += Int(j)!
+//        }
+//    }
+//    return result
+//}
+
+//다른풀이 (?)
+//func solution(_ s: String) -> Int {
+//    var stack = [Int]()
+//
+//    for w in s.components(separatedBy: [" "]) {
+//        if w == "Z" {
+//            stack.popLast()
+//        } else {
+//            stack.append(Int(w)!)
+//        }
+//    }
+//    return stack.reduce(0, +)
 //}
