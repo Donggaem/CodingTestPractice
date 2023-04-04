@@ -644,3 +644,75 @@ import Foundation
 //    }
 //    return stack.reduce(0, +)
 //}
+
+//MARK: - 0404
+//MARK: - Lavel_0: 영어가 싫어요 (?)replacingOccurrences
+//func solution(_ numbers:String) -> Int64 {
+//    var englishArr: [String: String] = ["zero": "0","one": "1","two": "2","three": "3","four": "4","five": "5","six": "6","seven": "7","eight": "8","nine": "9"]
+//    var result = numbers
+//    for i in englishArr {
+//        result = result.replacingOccurrences(of: i.key, with: i.value)
+//    }
+//    return Int64(result)!
+//}
+
+//MARK: - Lavel_0: 잘라서 배열로 저장하기
+//func solution(_ my_str:String, _ n:Int) -> [String] {
+//    var str_n: String = ""
+//    var arr: [String] = []
+//    var count: Int = 0
+//    for i in my_str {
+//        count += 1
+//        str_n += String(i)
+//        if str_n.count == n {
+//            arr.append(str_n)
+//            str_n = ""
+//        }else if count == my_str.count {
+//            arr.append(str_n)
+//        }
+//    }
+//    return arr
+//}
+
+//다른풀이 //count를 사용하지않고 남은값이 있을때 배열에 넣기 isEmpty
+//func solution(_ my_str:String, _ n:Int) -> [String] {
+//    var result: [String] = []
+//    var answer = ""
+//
+//    for s in my_str {
+//        answer += String(s)
+//        if answer.count == n {
+//            result.append(answer)
+//            answer = ""
+//        }
+//    }
+//    if !answer.isEmpty {
+//        result.append(answer)
+//    }
+//    return result
+//}
+
+//MARK: - Lavel_0: 문자열 계산하기 (?) 쓰인 메서드 공부하기
+//다른사람 풀이
+//func solution(_ my_string:String) -> Int {
+//    var a = my_string.split(separator: " ")
+//    var result = Int(a[0])!
+//    for i in a.enumerated() {
+//        if i.element == "+" {
+//            result += Int(a[i.offset + 1])!
+//        }
+//        if i.element == "-" {
+//            result -= Int(a[i.offset + 1])!
+//        }
+//    }
+//    return result
+//}
+//
+//func solution(_ myString: String) -> Int {
+//    return myString.replacingOccurrences(of: "- ", with: "-")
+//        .replacingOccurrences(of: "+", with: "")
+//        .trimmingCharacters(in: .whitespacesAndNewlines)
+//        .split(separator: " ")
+//        .map { Int($0)! }
+//        .reduce(0, +)
+//}
