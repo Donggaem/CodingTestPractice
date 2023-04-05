@@ -716,3 +716,22 @@ import Foundation
 //        .map { Int($0)! }
 //        .reduce(0, +)
 //}
+
+//MARK: - 0405
+//MARK: - Lavel_0: 삼각형의 완성조건 (2)
+//func solution(_ sides:[Int]) -> Int {
+//    var result = 0
+//    for _ in (sides.max()! - sides.min()!) + 1...sides.max()! {
+//        result += 1
+//    }
+//    for _ in (sides.max()! + 1)..<(sides.max()! + sides.min()!){
+//        result += 1
+//    }
+//    return result
+//}
+
+//다른사람 풀이
+//func solution(_ sides: [Int]) -> Int { sides.max()! - (sides.max()! - sides.min()!) + sides.reduce(0, +) - sides.max()! - 1 }
+
+//MARK: - 외계어 사전
+//func solution(_ spell:[String], _ dic:[String]) -> Int {dic.map{String($0.sorted())}.contains(spell.sorted().joined()) ? 1 : 2}
