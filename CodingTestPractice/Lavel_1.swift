@@ -75,3 +75,33 @@ import Foundation
 
 //MARK: - Lavel_1: 정수 내림차순으로 배치하기
 //func solution(_ n:Int64) -> Int64 {Int64(String(n).map{String($0)}.sorted(by: >).joined())!}
+
+//MARK: 0408
+//MARK: - Lavel_1: 하샤드 수
+//func solution(_ x:Int) -> Bool {
+//    var xx: Int = 0
+//    xx = String(x).map{Int(String($0))!}.reduce(0, +)
+//    return x % xx == 0 ? true : false
+//}
+
+//MARK: - Lavel_1: 두 정수 사이의 합
+//func solution(_ a:Int, _ b:Int) -> Int64 {Int64((a > b ? b...a : a...b).reduce(0, +))}
+
+//MARK: - Lavel_1: 콜라츠 추측
+//func solution(_ num:Int) -> Int {
+//    var result: Int = num
+//    var count: Int = 0
+//    while (result > 1) {
+//        count += 1
+//        if count == 500 {
+//            count = -1
+//            break
+//        }
+//        if result % 2 == 0 {
+//          result =  result / 2
+//        }else {
+//            result = (result * 3) + 1
+//        }
+//    }
+//    return count
+//}
