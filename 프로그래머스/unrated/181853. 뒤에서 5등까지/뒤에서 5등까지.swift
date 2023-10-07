@@ -1,0 +1,1 @@
+func solution(_ num_list:[Int]) -> [Int] {num_list.sorted().prefix(5).map{Int($0)}}
