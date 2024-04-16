@@ -16,3 +16,12 @@ func solution(_ num_list:[Int]) -> Int {
   }
   return cnt
 }
+
+//좋은 풀이
+// func solution(_ num_list:[Int]) -> Int {
+//     func dfs(_ num: Int, _ count: Int) -> Int {
+//         if num == 1 { return count }
+//         return dfs(num / 2, count + 1)
+//     }
+//     return num_list.reduce(0) { $0 + dfs($1, 0) }
+// }
