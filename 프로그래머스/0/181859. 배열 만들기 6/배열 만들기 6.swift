@@ -1,18 +1,12 @@
 func solution(_ arr:[Int]) -> [Int] {
-  var i = 0
   var stk: [Int] = []
   
-  while i < arr.count {
-    if stk.isEmpty {
-      stk.append(arr[i])
+  arr.forEach {
+    if stk.isEmpty || stk.last != $0 {
+      stk.append($0)
     } else {
-      if stk.last == arr[i] {
-        stk.removeLast()
-      } else {
-        stk.append(arr[i])
-      }
+      stk.popLast()
     }
-    i += 1
   }
   return stk.isEmpty ? [-1] : stk
 }
