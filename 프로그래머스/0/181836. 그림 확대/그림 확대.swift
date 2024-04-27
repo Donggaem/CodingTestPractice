@@ -13,3 +13,8 @@ func solution(_ picture:[String], _ k:Int) -> [String] {
   }
   return result
 }
+
+//다른사람 풀이
+// func solution(_ picture:[String], _ k:Int) -> [String] {
+//     return picture.flatMap { Array(repeating: $0.map { String(repeating: $0, count: k) }.joined(), count: k) }
+// }
