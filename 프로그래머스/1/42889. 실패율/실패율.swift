@@ -1,10 +1,9 @@
 import Foundation
 
-import Foundation
-
 func solution(_ N:Int, _ stages:[Int]) -> [Int] {
   var failureRates: [Int : Double] = [:]
   var player = stages.count
+    
   for i in 1...N {
     var noClear = 0
     
